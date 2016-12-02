@@ -92,16 +92,6 @@ public class Controller2 {
                 break;
             }
 
-            if (responseLine.startsWith("В доступе отказано")) {
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("");
-                alert.setHeaderText(null);
-                alert.setResizable(true);
-                alert.getDialogPane().setPrefSize(300, 100);
-                alert.setContentText("В доступе отказано.");
-                alert.showAndWait();
-                return;
-            }
             users.add(responseLine);
         }
         if (!flag) {
